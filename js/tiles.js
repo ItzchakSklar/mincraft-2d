@@ -21,6 +21,7 @@ const stoneBorder = 48;
 const columns = 100;
 const rows = 50;
 
+
 for (let row = 0; row < rows; row++) {
     for (let col = 0; col < columns; col++) {
         const tile = document.createElement("div");
@@ -40,11 +41,12 @@ for (let row = 0; row < rows; row++) {
         }
 
         tilesContainer.appendChild(tile);
-
+    }
+}
 generateTrees()
 
 function generateTrees() {
-  const grassRow = HorizonLine - 1;
+  const grassRow = horizonLine - 1;
   const grassCells = document.querySelectorAll(`[data-row="${grassRow}"]`);
   const numOfTrees = Math.ceil((Math.random() * grassCells.length) / 2);
 
@@ -67,7 +69,7 @@ function generateTrees() {
 }
 
 function creatTree(ground) {
-  const baseRow = HorizonLine - 1; // שורת הקרקע (HorizonLine)
+  const baseRow = horizonLine - 1; // שורת הקרקע (horizonLine)
   const baseCol = ground;
   const maxHigh = 5;
   const minHigh = 3;
