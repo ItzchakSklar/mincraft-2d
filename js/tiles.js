@@ -71,34 +71,29 @@ const tileType = {
     bedrock: "bedrock"
 }
 
+const breakable = {
+    true: "breakable",
+    false: "unbreakable"
+}
 
 for (let row = 0; row < rows; row++) {
     for (let col = 0; col < columns; col++) {
         const tile = document.createElement("div");
-        tile.id = row * 100 + col; //Setting a unique ID for each tile according to its row
+        tile.id = `tile:${row * 100 + col}|`; //Setting a unique ID for each tile according to its row
         tile.classList.add("tile");
 
         if (row < 6) {
-            tile.classList.add(tileType.sky);
+            tile.classList.add(tileType.sky, breakable.false);
         } else if (row === 6) {
-            tile.classList.add(tileType.grass);
+            tile.classList.add(tileType.sky, tileType.grass, breakable.true);
         } else if (row < 27) {
-            tile.classList.add(tileType.dirt);
+            tile.classList.add(tileType.sky, tileType.dirt, breakable.true);
         } else if (row < 48) {
-            tile.classList.add(tileType.stone);
+            tile.classList.add(tileType.sky, tileType.stone, breakable.true);
         } else {
-            tile.classList.add(tileType.bedrock);
+            tile.classList.add(tileType.bedrock, breakable.false);
         }
 
         tilesContainer.appendChild(tile);
     }
 }
-
-// 1=sky 2=lives 3=tree
-
-const rtee = 
-[[1,1,2,1,1],
-[1,2,3,2,1],
-[1,1,3,1,1],
-[1,1,3,1,1]] 
-
