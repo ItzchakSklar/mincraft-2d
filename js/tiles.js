@@ -42,8 +42,7 @@ for (let row = 0; row < rows; row++) {
     tilesContainer.appendChild(tile);
   }
 }
-
-generateTrees();
+generateTrees()
 
 function generateTrees() {
   const grassRow = HorizonLine - 1;
@@ -137,4 +136,6 @@ function generateLeaves(col, topRow) {
 
 }
 
-
+export {
+    generateTrees
+}
