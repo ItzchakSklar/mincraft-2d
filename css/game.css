@@ -1,0 +1,65 @@
+body {
+  width: 6400px;
+  height: 3200px;
+}
+
+#tilesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 4rem);
+  grid-auto-rows: repeat(auto-fill, 4rem);
+}
+
+.tile {
+  width: 64px;
+  height: 64px;
+}
+
+.tile.breakable:hover {
+  border: 0.5px solid black;
+  box-sizing: border-box;
+}
+
+.tile.sky {
+  background-color: skyblue;
+}
+
+.tile.grass {
+    background-image: url("../assets/tiles/grass.png"); 
+    background-size: cover;   
+    background-repeat: no-repeat;
+
+}
+
+.tile.dirt {
+    background-image: url("../assets/tiles/dirt.png"); 
+    background-size: cover;   
+    background-repeat: no-repeat;
+}
+
+
+.tile.stone {
+  background-image: url("../assets/tiles/stone.png"); 
+  background-size: cover;   
+  background-repeat: no-repeat;
+}
+
+.tile.bedrock {
+  background-image: url("../assets/tiles/bedrock.png"); 
+  background-size: cover;   
+  background-repeat: no-repeat;
+  
+}
+
+.tile.tree {
+    background-image: url("../assets/tiles/trees.png"); 
+    background-size: cover;   
+    background-repeat: no-repeat;
+}
+
+.tile.leaves {
+    background-image: url("../assets/tiles/leaves.png"); 
+    background-size: cover;   
+    background-repeat: no-repeat;
+    background-color: skyblue;
+
+}
