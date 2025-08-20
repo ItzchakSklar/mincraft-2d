@@ -1,6 +1,10 @@
+@import url('https://fonts.cdnfonts.com/css/minecraft-3');
+
+
 body {
   width: 6400px;
   height: 3200px;
+  font-family: 'Minecraft', sans-serif;
 }
 
 #tilesGrid {
@@ -24,25 +28,61 @@ body {
 }
 
 .tile.grass {
-    background-image: url("../assets/tiles/grass.png"); 
-    background-size: cover;   
-    background-repeat: no-repeat;
+  background-image: url("../assets/tiles/grass.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .tile.dirt {
-    background-image: url("../assets/tiles/dirt.png"); 
-    background-size: cover;   
-    background-repeat: no-repeat;
+  background-image: url("../assets/tiles/dirt.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .tile.stone {
-    background-image: url("../assets/tiles/stone.png"); 
-    background-size: cover;   
-    background-repeat: no-repeat;
+  background-image: url("../assets/tiles/stone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .tile.bedrock {
-    background-image: url("../assets/tiles/bedrock.png"); 
-    background-size: cover;   
-    background-repeat: no-repeat;
+  background-image: url("../assets/tiles/bedrock.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
+#top-nav {
+  position: fixed;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: fit-content;
+  flex-direction: column;
+}
+
+.button {
+  background-color: #A0A0A0;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  color: white;
+  font-size: 1.5vw;
+  padding: .5em .7em;
+  width: auto;
+  max-width: 250px;
+  min-width: 5px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow: 0px 3px 1px #707070;
+  margin: 0.5rem;
+  text-decoration: none;
+  letter-spacing: 0.09em;
+}
+
+.button:hover {
+  background-color: #909090;
+  box-shadow: 0px 5px 3px #707070;
 }
