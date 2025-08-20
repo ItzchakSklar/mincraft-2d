@@ -1,0 +1,44 @@
+body {
+    width: 6400px;
+    height: 3200px;
+}
+
+#tilesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 4rem);
+    grid-auto-rows: repeat(auto-fill, 4rem);
+}
+
+.tile {
+    width: 64px;
+    height: 64px;
+    background-color: aquamarine;
+}
+
+.tile:hover {
+    border: .5px solid black;
+    box-sizing: border-box;
+}
+
+.tile.sky {
+    background-color: skyblue;
+    border: none;
+}
+
+.tile.grass {
+    background-color: green;
+}
+
+.tile.dirt {
+    background-image: url("../assets/tiles/dirt.png"); 
+    background-size: cover;   
+    background-repeat: no-repeat;
+}
+
+.tile.stone {
+    background-color: gray;
+}
+
+.tile.bedrock {
+    background-color: rgb(54, 51, 51);
+}
