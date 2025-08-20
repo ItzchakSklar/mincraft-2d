@@ -14,7 +14,7 @@ const breakable = {
   false: "unbreakable",
 };
 
-const horizonLine = 8;
+const horizonLine = 10;
 const dirtBorder = 27;
 const stoneBorder = 48;
 
@@ -38,17 +38,20 @@ for (let row = 0; row < rows; row++) {
         } else {
             tile.classList.add(tileType.bedrock, breakable.false);
         }
-
+        tile.dataset.row = row;
+        tile.dataset.col = col;
         tilesContainer.appendChild(tile);
     }
 }
+console.log("finish world");
+
 generateTrees()
 
 function generateTrees() {
-  const grassRow = HorizonLine - 1;
+  const grassRow = horizonLine - 1;
   const grassCells = document.querySelectorAll(`[data-row="${grassRow}"]`);
   const numOfTrees = Math.ceil((Math.random() * grassCells.length) / 2);
-
+    console.log("num Of Trees",numOfTrees);
   for (let i = 0; i < numOfTrees; i++) {
     const baseCol = Math.floor(Math.random() * grassCells.length);
     console.log("tree in", baseCol);
