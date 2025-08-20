@@ -24,7 +24,10 @@ body {
 }
 
 .tile.grass {
-  background-color: green;
+    background-image: url("../assets/tiles/grass.png"); 
+    background-size: cover;   
+    background-repeat: no-repeat;
+
 }
 
 .tile.dirt {
@@ -34,9 +37,14 @@ body {
 }
 
 .tile.stone {
-  background-color: gray;
+    background-image: url("../assets/tiles/stone.png"); 
+    background-size: cover;   
+    background-repeat: no-repeat;
 }
 
 .tile.bedrock {
-  background-color: rgb(54, 51, 51);
+    background-image: url("../assets/tiles/bedrock.png"); 
+    background-size: cover;   
+    background-repeat: no-repeat;
+
 }
