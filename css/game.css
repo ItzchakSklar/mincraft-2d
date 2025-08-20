@@ -27,7 +27,6 @@ body {
     background-image: url("../assets/tiles/grass.png"); 
     background-size: cover;   
     background-repeat: no-repeat;
-
 }
 
 .tile.dirt {
@@ -46,5 +45,4 @@ body {
     background-image: url("../assets/tiles/bedrock.png"); 
     background-size: cover;   
     background-repeat: no-repeat;
-
 }
