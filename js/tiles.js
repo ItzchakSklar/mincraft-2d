@@ -20,11 +20,11 @@ for (let row = 0; row < rows; row++) {
         if (row < 6) {
             tile.classList.add(tileType.sky);
         } else if (row === 6) {
-            tile.classList.add(tileType.grass);
+            tile.classList.add(tileType.sky, tileType.grass);
         } else if (row < 27) {
-            tile.classList.add(tileType.dirt);
+            tile.classList.add(tileType.sky, tileType.dirt);
         } else if (row < 45) {
-            tile.classList.add(tileType.stone);
+            tile.classList.add(tileType.sky, tileType.stone);
         } else {
             tile.classList.add(tileType.bedrock);
         }
