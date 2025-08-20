@@ -1,7 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/minecrafter');
 
-
-
 body {
     background-image: url("/assets/minecraft-home/minecraft\ home\ screen\ background.png");
     background-repeat: no-repeat;
@@ -22,15 +20,10 @@ body::before {
     z-index: 1;
 }
 
-
-
 #logo {
     max-width: 650px;
     width: 70vw;
     height: auto;
-    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); */
-    /* margin-bottom: 1rem; */
-
 }
 
 .container {
@@ -41,12 +34,6 @@ body::before {
     position: relative;
     z-index: 2;
 }
-
-/* #logo:hover {
-    transform: scale(1.05); 
-    transition: transform 0.3s ease; 
-} */
-
 
 .button {
     background-color: #A0A0A0;
@@ -73,10 +60,6 @@ body::before {
     background-color: #909090;
     box-shadow: 0px 5px 3px #707070;
 }
-
-
-
-
 
 /* 
 @media(max-width : 500px) {

@@ -27,7 +27,6 @@ body {
     background-image: url("../assets/tiles/grass.png"); 
     background-size: cover;   
     background-repeat: no-repeat;
-
 }
 
 .tile.dirt {
@@ -61,5 +60,4 @@ body {
     background-size: cover;   
     background-repeat: no-repeat;
     background-color: skyblue;
-
 }
