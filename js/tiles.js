@@ -40,7 +40,8 @@ for (let row = 0; row < rows; row++) {
         }
 
         tilesContainer.appendChild(tile);
-
+    }
+}
 generateTrees()
 
 function generateTrees() {
@@ -67,7 +68,7 @@ function generateTrees() {
 }
 
 function creatTree(ground) {
-  const baseRow = HorizonLine - 1; // שורת הקרקע (HorizonLine)
+  const baseRow = horizonLine - 1; // שורת הקרקע (HorizonLine)
   const baseCol = ground;
   const maxHigh = 5;
   const minHigh = 3;
@@ -89,7 +90,7 @@ function creatTree(ground) {
 }
 
 function generateLeaves(col, topRow) {
-    let high = HorizonLine - topRow
+    let high = horizonLine - topRow
   for (let dy = 0; dy < 2; dy++) {
     high = high - dy;
     for (let dx = -3; dx <= 3; dx++) {
