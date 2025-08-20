@@ -36,15 +36,30 @@ body {
     background-repeat: no-repeat;
 }
 
+
 .tile.stone {
-    background-image: url("../assets/tiles/stone.png"); 
+  background-image: url("../assets/tiles/stone.png"); 
+  background-size: cover;   
+  background-repeat: no-repeat;
+}
+
+.tile.bedrock {
+  background-image: url("../assets/tiles/bedrock.png"); 
+  background-size: cover;   
+  background-repeat: no-repeat;
+  
+}
+
+.tile.tree {
+    background-image: url("../assets/tiles/trees.png"); 
     background-size: cover;   
     background-repeat: no-repeat;
 }
 
-.tile.bedrock {
-    background-image: url("../assets/tiles/bedrock.png"); 
+.tile.leaves {
+    background-image: url("../assets/tiles/leaves.png"); 
     background-size: cover;   
     background-repeat: no-repeat;
+    background-color: skyblue;
 
 }
