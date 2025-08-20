@@ -1,33 +1,33 @@
 body {
-    width: 6400px;
-    height: 3200px;
+  width: 6400px;
+  height: 3200px;
 }
 
 #tilesGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 4rem);
-    grid-auto-rows: repeat(auto-fill, 4rem);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 4rem);
+  grid-auto-rows: repeat(auto-fill, 4rem);
 }
 
 .tile {
-    width: 64px;
-    height: 64px;
+  width: 64px;
+  height: 64px;
 }
 
-.tile:hover {
-    border: .5px solid black;
-    box-sizing: border-box;
+.tile.breakable:hover {
+  border: 0.5px solid black;
+  box-sizing: border-box;
 }
 
 .tile.sky {
-    background-color: skyblue;
-    border: none;
+  background-color: skyblue;
 }
 
 .tile.grass {
     background-image: url("../assets/tiles/grass.png"); 
     background-size: cover;   
     background-repeat: no-repeat;
+
 }
 
 .tile.dirt {
@@ -46,4 +46,5 @@ body {
     background-image: url("../assets/tiles/bedrock.png"); 
     background-size: cover;   
     background-repeat: no-repeat;
+
 }
