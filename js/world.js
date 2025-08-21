@@ -1,12 +1,21 @@
+import { saveGame, loadGame, resetGame } from "./state.js";
+import { makeGrid } from "./tiles.js";
+import { tilesContainer } from "./globalObj.js";
+import {generateTrees } from "./trees.js";
 
-import { creatworld } from "./tiles.js";
-import { generateTrees } from "./trees.js";
-
-
-function startgame(horizonLine) {
-  creatworld(horizonLine);
-  generateTrees(horizonLine);
+export function startNewGame() {
+    resetGame();
+    const grid = makeGrid();
+    generateTrees();
+    saveGame(grid);
 }
 
-export { startgame };
-
+export function continueGame() {
+    const game = loadGame();
+    
+    if (!game) {
+        //do this (alert);
+    } else {
+        tilesContainer.innerHTML = game;
+    }
+}

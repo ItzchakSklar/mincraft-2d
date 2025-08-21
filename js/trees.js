@@ -1,20 +1,7 @@
-  const tileType = {
-    sky: "sky",
-    grass: "grass",
-    dirt: "dirt",
-    stone: "stone",
-    bedrock: "bedrock",
-    tree: "tree",
-  };
+import { layers,trees } from "./globalObj.js";
 
-  const breakable = {
-    true: "breakable",
-    false: "unbreakable",
-  };
-
-
-function generateTrees(horizonLineS) {
-  const horizonLine = horizonLineS;
+function generateTrees() {
+  const horizonLine = layers.horizonLine ;
 
   const grassRow = horizonLine - 1;
   const grassCells = document.querySelectorAll(`[data-row="${grassRow}"]`);
@@ -27,7 +14,7 @@ function generateTrees(horizonLineS) {
     console.log("tree in", baseCol);
 
     let isEmptyPlace = true;
-    for (let k = baseCol - 3; k <= baseCol + 3; k++) {
+    for (let k = baseCol - trees.distance; k <= baseCol + trees.distance; k++) {
       if (k < 0 || k >= columns) continue;
 
       const tempTile = document.querySelector(
