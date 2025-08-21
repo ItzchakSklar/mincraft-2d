@@ -46,3 +46,16 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.tile[tileType = "wood"] {
+  background-image: url("../assets/tiles/wood.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tile[tileType = "leave"] {
+  background-image: url("../assets/tiles/leave.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: skyblue;
+}

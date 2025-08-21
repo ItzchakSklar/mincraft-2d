@@ -24,8 +24,8 @@ function creatworld() {
     true: "true",
     false: "false",
   };
-
-  const horizonLine = 8;
+  localStorage.removeItem("tilesContainer");
+  const horizonLine = 10;
   const dirtBorder = 27;
   const stoneBorder = 48;
 

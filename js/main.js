@@ -1,2 +1,2 @@
-import {startgame} from "./world";
+import {startgame} from "./world.js";
 startgame();
