@@ -1,3 +1,4 @@
-import {startgame} from "./world.js";
-const horizonLine = 11;
-startgame(horizonLine);
+
+import { startNewGame, continueGame } from "./world.js";
+import "./worldListteners.js";
+startNewGame()

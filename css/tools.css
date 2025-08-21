@@ -1,0 +1,51 @@
+
+
+#tools_container {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  position: fixed;
+  left: 40%;
+  bottom: 10%;
+  background-color: rgba(255, 255, 255, 0.457);
+}
+/* .background_gray {
+  /* background-color: gray; */
+/* } */ 
+
+.tools {
+  cursor: pointer;
+  height: 48px;
+  width: 48px;
+  background: none;
+
+}
+
+#Axe {
+  background-image: url("../assets/tools/Axe.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#Pickaxe {
+  background-image: url("../assets/tools/Pickaxe.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+#Shovel {
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../assets/tools/Shovel.png");
+}
+
+#Shears{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../assets/tools/Shears.png");
+}
+
