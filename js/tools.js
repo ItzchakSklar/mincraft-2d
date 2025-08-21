@@ -7,7 +7,7 @@ ToolsContainer.addEventListener("click", (event) => {
     /* TODO - should verify some other details? */
 
     activeTool = event.target.name;                                // save the name of the chosen tool
-
-    document.body.style.cursor = `url('${activeTool}.png')`;        // pin the tool icon to cursor
-
+    
+    document.body.style.cursor = `url('tools/${activeTool}.png') 16 16, auto`;  // transform cursor to chosen tool icon 
 })
+
