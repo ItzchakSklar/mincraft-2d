@@ -1,3 +1,5 @@
+
+
 #tools_container {
   display: flex;
   width: fit-content;
@@ -17,7 +19,8 @@
 }
 
 #Axe {
-  background-image: url("../assets/tools/axe.png");
+  background-image: url("../assets/tools/Axe.png");
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -26,11 +29,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../assets/tools/pickaxe..png");
+  background-image: url("../assets/tools/Pickaxe.png");
 }
 #Shovel {
+  
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../assets/tools/shovel.png");
+  background-image: url("../assets/tools/Shovel.png");
 }
+
