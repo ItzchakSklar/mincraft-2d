@@ -12,8 +12,10 @@
     false: "unbreakable",
   };
 
-function generateTrees() {
-  const horizonLine = 8;
+
+function generateTrees(horizonLineS) {
+  const horizonLine = horizonLineS;
+
   const grassRow = horizonLine - 1;
   const grassCells = document.querySelectorAll(`[data-row="${grassRow}"]`);
   const numOfTrees = Math.ceil((Math.random() * grassCells.length) / 2);
@@ -27,10 +29,15 @@ function generateTrees() {
     let isEmptyPlace = true;
     for (let k = baseCol - 3; k <= baseCol + 3; k++) {
       if (k < 0 || k >= columns) continue;
-      const temp = document.querySelector(
+
+      const tempTile = document.querySelector(
         `[data-row="${grassRow}"][data-col="${k}"]`
       );
-      if (temp.classList.contains("tree")) isEmptyPlace = false;
+      if (tempTile.getAttribute("tileType") == "wood"){
+        isEmptyPlace = false;
+        break;
+      };
+
     }
     if (!isEmptyPlace) continue;
 
@@ -53,8 +60,11 @@ function generateTrees() {
       const cell = document.querySelector(`[data-row="${r}"][data-col="${c}"]`);
       if (!cell) continue;
 
-      cell.classList.remove("sky");
-      cell.classList.add("tree", breakable.true);
+
+      // cell.removeAttribute("");
+      cell.setAttribute("tileType", "wood");
+      cell.setAttribute("breakable",true)
+
     }
     generateLeaves(ground, high);
   }
@@ -72,9 +82,11 @@ function generateTrees() {
           `[data-row="${r}"][data-col="${c}"]`
         );
         if (!cell) continue;
-        if (cell.classList.contains("tree")) continue; // לא מוחק גזע
-        cell.classList.remove("sky", "dirt", "stone", "grass");
-        cell.classList.add("leaves", breakable.true);
+
+        if (cell.getAttribute("tileType") == "wood") continue; // לא מוחק גזע
+        cell.setAttribute("tileType", "leave");
+        cell.setAttribute("breakable",true)
+
       }
     }
     for (let dy = 0; dy < 2; dy++) {
@@ -88,9 +100,11 @@ function generateTrees() {
           `[data-row="${r}"][data-col="${c}"]`
         );
         if (!cell) continue;
-        if (cell.classList.contains("tree")) continue; // לא מוחק גזע
-        cell.classList.remove("sky", "dirt", "stone", "grass");
-        cell.classList.add("leaves", breakable.true);
+
+        if (cell.getAttribute("tileType") == "wood") continue; // לא מוחק גזע
+        cell.setAttribute("tileType", "leave");
+        cell.setAttribute("breakable",true)
+
       }
     }
     for (let dy = 0; dy < 2; dy++) {
@@ -104,9 +118,11 @@ function generateTrees() {
           `[data-row="${r}"][data-col="${c}"]`
         );
         if (!cell) continue;
-        if (cell.classList.contains("tree")) continue; // לא מוחק גזע
-        cell.classList.remove("sky", "dirt", "stone", "grass");
-        cell.classList.add("leaves", breakable.true);
+
+        if (cell.getAttribute("tileType") == "wood") continue; // לא מוחק גזע
+        cell.setAttribute("tileType", "leave");
+        cell.setAttribute("breakable",true)
+
       }
     }
   }
