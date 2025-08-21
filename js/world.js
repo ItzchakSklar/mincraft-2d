@@ -1,8 +1,10 @@
 import { creatworld } from "./tiles.js";
 import { generateTrees } from "./trees.js";
-function startgame() {
-  creatworld();
-  generateTrees();
+
+
+function startgame(horizonLine) {
+  creatworld(horizonLine);
+  generateTrees(horizonLine);
 }
 
 export { startgame };
