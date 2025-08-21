@@ -1,4 +1,5 @@
-function creatworld() {
+function creatworld( horizonLineS) {
+
   const tileType = {
     sky: "sky",
     grass: "grass",
@@ -25,12 +26,14 @@ function creatworld() {
     false: "false",
   };
   localStorage.removeItem("tilesContainer");
-  const horizonLine = 10;
+  const horizonLine =  horizonLineS;
+
   const dirtBorder = 27;
   const stoneBorder = 48;
 
   const columns = 100;
   const rows = 50;
+
 
   const tilesContainer = document.getElementById("tilesGrid");
 
@@ -95,3 +98,4 @@ function creatworld() {
 }
 
 export { creatworld };
+
