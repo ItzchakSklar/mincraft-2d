@@ -14,50 +14,49 @@ body {
   height: 64px;
 }
 
-.tile.breakable:hover {
+.tile[breakable="true"]:hover {
   border: 0.5px solid black;
   box-sizing: border-box;
 }
 
-.tile.sky {
+.tile[tileType="sky"] {
   background-color: skyblue;
 }
 
-.tile.grass {
-    background-image: url("../assets/tiles/grass.png"); 
-    background-size: cover;   
-    background-repeat: no-repeat;
-}
-
-.tile.dirt {
-    background-image: url("../assets/tiles/dirt.png"); 
-    background-size: cover;   
-    background-repeat: no-repeat;
-}
-
-
-.tile.stone {
-  background-image: url("../assets/tiles/stone.png"); 
-  background-size: cover;   
+.tile[tileType="grass"] {
+  background-image: url("../assets/tiles/grass.png");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.tile.bedrock {
-  background-image: url("../assets/tiles/bedrock.png"); 
-  background-size: cover;   
+.tile[tileType="dirt"] {
+  background-image: url("../assets/tiles/dirt.png");
+  background-size: cover;
   background-repeat: no-repeat;
-  
 }
 
-.tile.tree {
-    background-image: url("../assets/tiles/trees.png"); 
-    background-size: cover;   
-    background-repeat: no-repeat;
+.tile[tileType="stone"] {
+  background-image: url("../assets/tiles/stone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.tile.leaves {
-    background-image: url("../assets/tiles/leaves.png"); 
-    background-size: cover;   
-    background-repeat: no-repeat;
-    background-color: skyblue;
+.tile[tileType="bedrock"] {
+  background-image: url("../assets/tiles/bedrock.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+.tile[tileType = "wood"] {
+  background-image: url("../assets/tiles/wood.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tile[tileType = "leave"] {
+  background-image: url("../assets/tiles/leave.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: skyblue;
+}
+
