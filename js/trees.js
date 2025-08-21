@@ -12,8 +12,10 @@
     false: "unbreakable",
   };
 
+
 function generateTrees(horizonLineS) {
   const horizonLine = horizonLineS;
+
   const grassRow = horizonLine - 1;
   const grassCells = document.querySelectorAll(`[data-row="${grassRow}"]`);
   const numOfTrees = Math.ceil((Math.random() * grassCells.length) / 2);
@@ -27,6 +29,7 @@ function generateTrees(horizonLineS) {
     let isEmptyPlace = true;
     for (let k = baseCol - 3; k <= baseCol + 3; k++) {
       if (k < 0 || k >= columns) continue;
+
       const tempTile = document.querySelector(
         `[data-row="${grassRow}"][data-col="${k}"]`
       );
@@ -34,6 +37,7 @@ function generateTrees(horizonLineS) {
         isEmptyPlace = false;
         break;
       };
+
     }
     if (!isEmptyPlace) continue;
 
@@ -56,9 +60,11 @@ function generateTrees(horizonLineS) {
       const cell = document.querySelector(`[data-row="${r}"][data-col="${c}"]`);
       if (!cell) continue;
 
+
       // cell.removeAttribute("");
       cell.setAttribute("tileType", "wood");
       cell.setAttribute("breakable",true)
+
     }
     generateLeaves(ground, high);
   }
@@ -76,9 +82,11 @@ function generateTrees(horizonLineS) {
           `[data-row="${r}"][data-col="${c}"]`
         );
         if (!cell) continue;
+
         if (cell.getAttribute("tileType") == "wood") continue; // לא מוחק גזע
         cell.setAttribute("tileType", "leave");
         cell.setAttribute("breakable",true)
+
       }
     }
     for (let dy = 0; dy < 2; dy++) {
@@ -92,9 +100,11 @@ function generateTrees(horizonLineS) {
           `[data-row="${r}"][data-col="${c}"]`
         );
         if (!cell) continue;
+
         if (cell.getAttribute("tileType") == "wood") continue; // לא מוחק גזע
         cell.setAttribute("tileType", "leave");
         cell.setAttribute("breakable",true)
+
       }
     }
     for (let dy = 0; dy < 2; dy++) {
@@ -108,9 +118,11 @@ function generateTrees(horizonLineS) {
           `[data-row="${r}"][data-col="${c}"]`
         );
         if (!cell) continue;
+
         if (cell.getAttribute("tileType") == "wood") continue; // לא מוחק גזע
         cell.setAttribute("tileType", "leave");
         cell.setAttribute("breakable",true)
+
       }
     }
   }
