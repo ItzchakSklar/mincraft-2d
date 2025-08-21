@@ -1,12 +1,12 @@
-
-
 #tools_container {
   display: flex;
   width: fit-content;
   height: fit-content;
   position: fixed;
-  left: 520px;
-  bottom: 10%;
+  left: 43vw;
+  right: 47vw;
+  bottom: 15%;
+  background-color: rgba(255, 255, 255, 0.457);
 }
 .background_gray {
   background-color: gray;
@@ -14,13 +14,13 @@
 
 .tools {
   cursor: pointer;
-  height: 48px;
-  width: 48px;
+  height: 64px;
+  width: 64px;
+  background: none;
 }
 
 #Axe {
-  background-image: url("../assets/tools/Axe.png");
-
+  background-image: url("../assets/tools/diamond-axe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -29,13 +29,17 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../assets/tools/Pickaxe.png");
+  background-image: url("../assets/tools/diamond-pickaxe.jpg");
 }
 #Shovel {
-  
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../assets/tools/Shovel.png");
+  background-image: url("../assets/tools/diamond-shovel.jpg");
 }
-
+#Shears {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../assets/tools/shears-toolStack.jpg");
+}
