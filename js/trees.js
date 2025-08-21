@@ -12,8 +12,8 @@
     false: "unbreakable",
   };
 
-function generateTrees() {
-  const horizonLine = 10;
+function generateTrees(horizonLineS) {
+  const horizonLine = horizonLineS;
   const grassRow = horizonLine - 1;
   const grassCells = document.querySelectorAll(`[data-row="${grassRow}"]`);
   const numOfTrees = Math.ceil((Math.random() * grassCells.length) / 2);

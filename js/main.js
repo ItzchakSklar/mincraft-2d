@@ -1,2 +1,3 @@
 import {startgame} from "./world.js";
-startgame();
+const horizonLine = 11;
+startgame(horizonLine);
