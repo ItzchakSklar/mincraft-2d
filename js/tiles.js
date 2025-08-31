@@ -13,6 +13,7 @@ export function breakTile(tool, tile) {
 
 export function putTile(block, tile) {
     tile.setAttribute("tileType", block);
+    tile.setAttribute("breakable", breakable.true)
 }
 
 export function makeGrid() {
